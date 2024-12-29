@@ -214,8 +214,8 @@ def run_logic():
                 sys.exit(1)
 
             current_date = datetime.now()
-            date_string = current_date.strftime("%Y-%m-%d")
-            path_to_file = f"AudioNotes/{date_string}"
+            date_string = current_date.strftime("%Y-%m-%d %H:%M:%S")
+            path_to_file = f"AudioNotes/{date_string}.md"
             os.makedirs(os.path.dirname(path_to_file), exist_ok=True)
 
             err = write_text_to_note(path_to_file, extracted_text, sanitised_text)
