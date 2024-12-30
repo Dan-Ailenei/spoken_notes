@@ -11,6 +11,6 @@ curl http://localhost:39281/v1/chat/completions \
     "content": "Salut, prietenul meu Candale! \n Sunt pe drum pe Bucuresti!"
   }
   ],
-  "model": "llama3.2:3b-gguf-q4-km",
+  "model": "llama3.2:3b-gguf-q8-0",
   "stream": false,
 }'
